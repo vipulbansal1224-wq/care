@@ -1,0 +1,17 @@
+2023-01-28T08:01:58+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in /home2/news5tsef/www.carecranes.com/wp-admin/includes/class-bulk-upgrader-skin.php:156
+Stack trace:
+#0 /home2/news5tsef/www.carecranes.com/wp-admin/includes/class-bulk-upgrader-skin.php(156): sprintf('%1$s installed ...', 'Contact Form 7')
+#1 /home2/news5tsef/www.carecranes.com/wp-content/plugins/woostify-sites-library/includes/class-tgm-plugin-activation.php(3646): Bulk_Upgrader_Skin->after('Contact Form 7')
+#2 /home2/news5tsef/www.carecranes.com/wp-admin/includes/class-wp-upgrader.php(825): TGMPA_Bulk_Installer_Skin->after()
+#3 /home2/news5tsef/www.carecranes.com/wp-content/plugins/woostify-sites-library/includes/class-tgm-plugin-activation.php(3266): WP_Upgrader->run(Array)
+#4 /home2/news5tsef/www.carecranes.com/wp-content/plugins/woostify-sites-library/includes/class-tgm-plugin-activation.php(3379): TGMPA_Bulk_Installer->run(Array)
+#5 /home2/news5tsef/www.carecranes.com/wp-content/plugins/woostify-sites-library/includes/class-tgm-plugin-activation.php(2985): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 /home2/news5tsef/www.carecranes.com/wp-content/plugins/woostify-sites-library/includes/class-tgm-plugin-activation.php(751): TGMPA_List_Table->process_bulk_actions()
+#7 /home2/news5tsef/www.carecranes.com/wp-includes/class-wp-hook.php(308): TGM_Plugin_Activation->install_plugins_page('')
+#8 /home2/news5tsef/www.carecranes.com/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#9 /home2/news5tsef/www.carecranes.com/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#10 /home2/news5tsef/www.carecranes.com/wp-admin/admin.php(259): do_action('plugins_page_tg...')
+#11 /home2/news5tsef/www.carecranes.com/wp-admin/plugins.php(10): require_once('/home2/news5tse...')
+#12 {main}
+  thrown in /home2/news5tsef/www.carecranes.com/wp-admin/includes/class-bulk-upgrader-skin.php on line 156
+

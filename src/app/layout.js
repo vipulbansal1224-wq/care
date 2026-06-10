@@ -1,43 +1,52 @@
-import './globals.css';
-import Link from 'next/link';
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Link from "next/link";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'KD Cranes | Over Head Cranes & Spare Parts',
-  description: 'Leading Manufacturer of a wide range of Busbar System, Conductor Bus Bar, Current Collector, etc. Established 2016 in Ludhiana.',
+  title: "KD Cranes | EOT Crane Manufacturers & Spare Parts",
+  description: "Leading Manufacturer of a wide range of Busbar System, Conductor Bus Bar, Current Collector, etc. Established 2016 in Ludhiana.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className={inter.className}>
+        
+        {/* Top Bar (Loadmate Style) */}
+        <div className="top-bar">
+          <div className="container top-bar-inner">
+            <div className="top-bar-contact">
+              <span>📧 <a href="mailto:info@kdcranes.com">info@kdcranes.com</a></span>
+              <span>📞 <a href="tel:+919876543210">+91 98765 43210</a></span>
+            </div>
+            <div className="top-bar-social">
+              {/* Add social links if needed */}
+              <span>Welcome to KD Cranes India</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Header */}
         <header className="header">
           <div className="container header-container">
             <Link href="/" className="logo-link">
-              <img src="/images/logo.jpg" alt="KD Cranes" style={{ height: '40px', width: 'auto' }} />
+              {/* We don't have a specific logo, so text logo or placeholder */}
+              <h1 style={{color: 'var(--primary)', fontWeight: 900, margin: 0, fontSize: '2rem'}}>KD CRANES</h1>
             </Link>
             
             <nav className="nav-menu">
               <Link href="/" className="nav-link active">Home</Link>
-              
-              <div className="dropdown">
-                <button className="nav-link dropbtn">Products ▼</button>
-                <div className="dropdown-content glass-card">
-                  <Link href="/product/rotary-limit-switch-40amp">Rotary Limit Switch</Link>
-                  <Link href="/product/dsl-busbar-system-125amp">DSL Busbar</Link>
-                  <Link href="/product/over-head-cranes-wireless-radio-remote-8d">Wireless Remote</Link>
-                  <Link href="/">All Products</Link>
-                </div>
-              </div>
-              
-              <Link href="/" className="nav-link">Gallery</Link>
-              <Link href="/" className="contact-btn">Contact</Link>
+              <Link href="/" className="nav-link">Products</Link>
+              <Link href="/" className="nav-link">Applications</Link>
+              <Link href="/" className="nav-link">Spares</Link>
+              <Link href="/" className="btn-primary">Get Quote</Link>
             </nav>
-            
-            <button className="mobile-menu-btn" aria-label="Toggle mobile menu">☰</button>
           </div>
         </header>
 
-        <main style={{ minHeight: '100vh', paddingTop: '80px' }}>
+        <main style={{ minHeight: "100vh" }}>
           {children}
         </main>
 
@@ -45,60 +54,44 @@ export default function RootLayout({ children }) {
           <div className="container">
             <div className="footer-grid">
               <div>
-                <Link href="/" className="logo-link" style={{ marginBottom: '20px', display: 'inline-flex' }}>
-                  <img src="/images/logo.jpg" alt="KD Cranes" style={{ height: '50px', width: 'auto', backgroundColor: '#fff', padding: '4px', borderRadius: '4px' }} />
-                </Link>
-                <p style={{ marginBottom: '24px' }}>
+                <h3 style={{color: '#fff', fontSize: '1.8rem', fontWeight: 900, marginBottom: '20px'}}>KD CRANES</h3>
+                <p style={{marginBottom: "24px", color: '#ccc', lineHeight: 1.6}}>
                   Established as a Sole Proprietorship firm in the year 2016, we "KD Enterprises" are a leading Manufacturer of a wide range of Crane Spare Parts & Accessories.
                 </p>
-                <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-                  <span className="glass-card" style={{ padding: '6px 12px', fontSize: '0.75rem', fontWeight: 700, color: 'var(--primary)' }}>EST. 2016</span>
-                  <span className="glass-card" style={{ padding: '6px 12px', fontSize: '0.75rem', fontWeight: 700, color: 'var(--primary)' }}>PREMIUM QUALITY</span>
-                </div>
               </div>
               
               <div>
                 <h4 className="footer-heading">Quick Links</h4>
                 <ul className="footer-links">
                   <li><Link href="/">Home</Link></li>
+                  <li><Link href="/">About Us</Link></li>
                   <li><Link href="/">Products</Link></li>
-                  <li><Link href="/">Download Brochure</Link></li>
                   <li><Link href="/">Contact Us</Link></li>
                 </ul>
               </div>
-              
+
               <div>
-                <h4 className="footer-heading">Product Types</h4>
+                <h4 className="footer-heading">Our Products</h4>
                 <ul className="footer-links">
-                  <li><Link href="/">EOT Crane Manufacturer</Link></li>
+                  <li><Link href="/">EOT Crane Spares</Link></li>
                   <li><Link href="/">Hydraulic Thruster Brake</Link></li>
                   <li><Link href="/">DSL Busbar System</Link></li>
                   <li><Link href="/">Current Collector</Link></li>
                   <li><Link href="/">Wireless Radio Remote</Link></li>
                 </ul>
               </div>
-              
+
               <div>
-                <h4 className="footer-heading">Corporate Office</h4>
-                <ul className="footer-contact">
-                  <li>
-                    <span style={{ color: 'var(--primary)', fontWeight: 'bold' }}>📍</span>
-                    <span>Ludhiana - Punjab, India.</span>
-                  </li>
-                  <li>
-                    <span style={{ color: 'var(--primary)', fontWeight: 'bold' }}>📞</span>
-                    <span>+91 98765 43210</span>
-                  </li>
+                <h4 className="footer-heading">Contact Us</h4>
+                <ul className="footer-links" style={{color: '#ccc', lineHeight: 1.6}}>
+                  <li>📍 Ludhiana - Punjab, India.</li>
+                  <li>📞 +91 98765 43210</li>
+                  <li>📧 info@kdcranes.com</li>
                 </ul>
               </div>
             </div>
-            
             <div className="footer-bottom">
               <p>© 2026 KD Enterprises. All rights reserved. Made in India 🇮🇳</p>
-              <div style={{ display: 'flex', gap: '24px' }}>
-                <Link href="/" style={{ color: 'var(--text-muted)' }}>Privacy Policy</Link>
-                <Link href="/" style={{ color: 'var(--text-muted)' }}>Terms & Conditions</Link>
-              </div>
             </div>
           </div>
         </footer>

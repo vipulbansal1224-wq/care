@@ -1,73 +1,84 @@
-import productsData from '../../../data/products.json';
-import Link from 'next/link';
+import products from "../../../data/products.json";
+import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
-  return productsData.map((product) => ({
+  return products.map((product) => ({
     slug: product.slug,
   }));
 }
 
-export default function ProductPage({ params }) {
-  const { slug } = params;
-  const product = productsData.find((p) => p.slug === slug);
+export default function ProductDetail({ params }) {
+  const product = products.find((p) => p.slug === params.slug);
 
   if (!product) {
-    return (
-      <div className="container" style={{ padding: '100px 0', textAlign: 'center' }}>
-        <h2>Product not found</h2>
-        <Link href="/" className="contact-btn" style={{ marginTop: '20px', display: 'inline-block' }}>Return Home</Link>
-      </div>
-    );
+    notFound();
   }
 
   return (
-    <div style={{ paddingBottom: '60px' }}>
-      <section className="section-padding" style={{ background: 'var(--secondary)' }}>
+    <>
+      {/* Page Banner with Breadcrumbs */}
+      <div className="page-banner">
         <div className="container">
-          <Link href="/" style={{ color: 'var(--primary)', fontWeight: 600, display: 'inline-block', marginBottom: '30px' }}>
-            &larr; Back to Products
-          </Link>
-          
-          <div className="glass-card" style={{ padding: '40px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'flex-start' }}>
-            <div style={{ background: '#fff', borderRadius: '12px', padding: '20px', border: '1px solid var(--border)' }}>
-              <img 
-                src={product.image || '/images/1-1.jpg'} 
-                alt={product.title} 
-                style={{ width: '100%', height: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }} 
-              />
-            </div>
+          <h1 className="page-title">{product.title}</h1>
+          <div className="breadcrumb">
+            <Link href="/">Home</Link> &gt; <Link href="/#products">Products</Link> &gt; {product.title}
+          </div>
+        </div>
+      </div>
+
+      {/* Main Product Layout */}
+      <section className="section-padding">
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '50px' }}>
             
-            {/* Product Info */}
+            {/* Left Column: Product Image */}
             <div>
-              <span style={{ color: 'var(--primary)', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '0.1em' }}>
-                KD Cranes Equipment
-              </span>
-              <h1 style={{ fontSize: '2.5rem', marginTop: '12px', marginBottom: '24px' }}>
+              <div style={{ border: '1px solid var(--border-color)', padding: '20px', background: '#fff' }}>
+                <img 
+                  src={product.image} 
+                  alt={product.title} 
+                  style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'contain' }} 
+                />
+              </div>
+            </div>
+
+            {/* Right Column: Product Specs */}
+            <div>
+              <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '20px', color: 'var(--secondary)' }}>
                 {product.title}
-              </h1>
+              </h2>
+              <p style={{ color: 'var(--primary)', fontSize: '1.5rem', fontWeight: 700, marginBottom: '30px' }}>
+                Request For Price
+              </p>
+
+              <div style={{ marginBottom: '30px' }}>
+                <Link href="/" className="btn-primary">Enquire Now</Link>
+              </div>
+
+              <h3 style={{ fontSize: '1.3rem', fontWeight: 700, marginBottom: '15px', borderBottom: '2px solid var(--border-color)', paddingBottom: '10px' }}>
+                Product Specifications
+              </h3>
               
-              <div style={{ background: 'var(--secondary)', padding: '20px', borderRadius: '8px', marginBottom: '30px', borderLeft: '4px solid var(--primary)' }}>
-                <h4 style={{ marginBottom: '12px', fontSize: '1.1rem' }}>Specifications</h4>
-                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              {Object.keys(product.specs).length > 0 ? (
+                <table className="spec-table">
                   <tbody>
-                    {Object.entries(product.specs || {}).map(([key, value]) => (
-                      <tr key={key} style={{ borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
-                        <td style={{ padding: '8px 0', fontWeight: 'bold', width: '40%' }}>{key}</td>
-                        <td style={{ padding: '8px 0', color: 'var(--foreground)' }}>{value}</td>
+                    {Object.entries(product.specs).map(([key, value]) => (
+                      <tr key={key}>
+                        <th>{key}</th>
+                        <td>{value}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
-              </div>
-
-              <div style={{ display: 'flex', gap: '16px', marginTop: '40px' }}>
-                <button className="contact-btn" style={{ padding: '14px 40px', fontSize: '1.05rem' }}>Request Quote</button>
-                <button className="filter-btn" style={{ padding: '14px 40px', fontSize: '1.05rem' }}>Download Specs</button>
-              </div>
+              ) : (
+                <p>No detailed specifications available.</p>
+              )}
             </div>
+            
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
