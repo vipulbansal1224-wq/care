@@ -1,81 +1,181 @@
 import Link from 'next/link';
-import products from '@/data/products.json';
+import productsData from '../data/products.json';
 
 export default function Home() {
+  const products = productsData.slice(0, 6); // Just show the first 6 products in the spotlight
+
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-extrabold text-blue-600 tracking-tight">CareStore</h1>
-          <nav className="space-x-8">
-            <Link href="/" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Home</Link>
-            <Link href="#" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Shop</Link>
-            <Link href="#" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">Contact</Link>
-          </nav>
+    <div style={{ paddingBottom: '60px' }}>
+      {/* Hero Slider */}
+      <section className="container" style={{ paddingTop: '20px' }}>
+        <div className="slider-container animate-fade">
+          <div className="slide active">
+            <img src="/images/1-1.jpg" alt="EOT Crane Manufacturer" className="slide-img" />
+            <div className="slide-overlay">
+              <span style={{ color: 'var(--primary)', textTransform: 'uppercase', fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.15em', marginBottom: '8px', display: 'inline-block' }}>
+                K.D.Crane Spare Parts & Accessories
+              </span>
+              <h1 className="slide-title">EOT Crane Manufacturer</h1>
+              <p className="slide-desc">Leading Manufacturer of a wide range of Busbar System, Conductor Bus Bar, Current Collector, etc.</p>
+              <div style={{ marginTop: '24px', display: 'flex', gap: '16px' }}>
+                <Link href="/" className="contact-btn">Explore Products</Link>
+                <Link href="/" className="filter-btn" style={{ background: 'rgba(255,255,255,0.08)', backdropFilter: 'blur(4px)', color: 'white' }}>Contact Us</Link>
+              </div>
+            </div>
+          </div>
         </div>
-      </header>
+      </section>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">Latest Products</h2>
-          <p className="mt-4 text-xl text-gray-500">Discover our carefully curated collection for your everyday needs.</p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products.map((product) => (
-            <Link key={product.ID} href={`/product/${product.slug}`} className="group block">
-              <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1">
-                <div className="relative h-64 overflow-hidden bg-gray-200">
-                  <img 
-                    src={product.image_url || 'https://via.placeholder.com/400x500?text=No+Image'} 
-                    alt={product.post_title}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                  />
-                  {product.regular_price && product.regular_price !== product.price && (
-                    <span className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                      Sale
-                    </span>
-                  )}
+      {/* Corporate Profile Section */}
+      <section className="section-padding">
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }}>
+            <div>
+              <span style={{ color: 'var(--primary)', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '0.1em' }}>
+                Corporate Profile
+              </span>
+              <h2 style={{ fontSize: '2.5rem', marginTop: '12px', marginBottom: '24px' }}>
+                Crafting Trust in Every Turn
+              </h2>
+              <p style={{ fontSize: '1.05rem', marginBottom: '20px' }}>
+                <strong>KD Enterprises</strong>, established as a Sole Proprietorship firm in the year 2016 in Ludhiana (Punjab, India), stands as a leading Manufacturer of a wide range of Crane Spare Parts & Accessories.
+              </p>
+              <p style={{ marginBottom: '24px' }}>
+                Situated in Ludhiana, we have constructed a wide and well functional infrastructural unit that plays an important role in the growth of our company. Under the headship of “Mr. Pankesh Thakur” (Owner), we have gained a huge clientele across the nation.
+              </p>
+              
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                <div className="glass-card" style={{ padding: '20px', display: 'flex', gap: '16px', alignItems: 'center' }}>
+                  <div style={{ fontSize: '2.5rem', color: 'var(--primary)' }}>🏢</div>
+                  <div>
+                    <h4 style={{ fontWeight: 800 }}>Est. 2016</h4>
+                    <p style={{ fontSize: '0.8rem' }}>Of Engineering Trust</p>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-1">{product.post_title}</h3>
-                  <div className="flex items-baseline space-x-2">
-                    <span className="text-xl font-extrabold text-blue-600">${product.price}</span>
-                    {product.regular_price && product.regular_price !== product.price && (
-                      <span className="text-sm font-medium text-gray-400 line-through">${product.regular_price}</span>
-                    )}
+                <div className="glass-card" style={{ padding: '20px', display: 'flex', gap: '16px', alignItems: 'center' }}>
+                  <div style={{ fontSize: '2.5rem', color: 'var(--primary)' }}>⚙️</div>
+                  <div>
+                    <h4 style={{ fontWeight: 800 }}>Manufacturer</h4>
+                    <p style={{ fontSize: '0.8rem' }}>11 to 25 People</p>
                   </div>
                 </div>
               </div>
-            </Link>
-          ))}
+            </div>
+            
+            <div className="glass-card" style={{ padding: '40px', borderLeft: '4px solid var(--primary)' }}>
+              <h3 style={{ marginBottom: '20px', fontSize: '1.5rem' }}>Our Product Range</h3>
+              <p style={{ marginBottom: '30px' }}>
+                We offer high-quality products at reasonable rates and deliver these within the promised time-frame.
+              </p>
+              
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                  <span style={{ background: 'rgba(237,9,9,0.1)', color: 'var(--primary)', padding: '8px', borderRadius: '8px', fontWeight: 'bold' }}>✓</span>
+                  <div>
+                    <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Heavy Duty Material</h4>
+                    <p style={{ fontSize: '0.88rem' }}>Hydraulic Thruster Brake & DSL Busbar Systems.</p>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                  <span style={{ background: 'rgba(237,9,9,0.1)', color: 'var(--primary)', padding: '8px', borderRadius: '8px', fontWeight: 'bold' }}>✓</span>
+                  <div>
+                    <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Wireless Radio Remote</h4>
+                    <p style={{ fontSize: '0.88rem' }}>For overhead cranes, customized to industrial needs.</p>
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                  <span style={{ background: 'rgba(237,9,9,0.1)', color: 'var(--primary)', padding: '8px', borderRadius: '8px', fontWeight: 'bold' }}>✓</span>
+                  <div>
+                    <h4 style={{ fontSize: '1rem', fontWeight: 700 }}>Hoist & Crane Accessories</h4>
+                    <p style={{ fontSize: '0.88rem' }}>Wirerope Hoist, Chain Hoist, and various Travelling Trolleys.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
+      </section>
 
-      <footer className="bg-gray-900 text-white py-12 mt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h4 className="text-xl font-bold mb-4 text-blue-400">CareStore</h4>
-            <p className="text-gray-400">Providing the best quality products with utmost care since 2026.</p>
+      {/* Product Spotlight */}
+      <section className="section-padding" style={{ background: 'var(--secondary)' }}>
+        <div className="container">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '48px' }}>
+            <div>
+              <span style={{ color: 'var(--primary)', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '0.1em' }}>
+                Product Spotlight
+              </span>
+              <h2 style={{ fontSize: '2.3rem', marginTop: '12px', color: 'var(--foreground)' }}>
+                Our Latest Innovations
+              </h2>
+            </div>
+            <Link href="/" className="product-link">View All Products &gt;&gt;</Link>
           </div>
-          <div>
-            <h4 className="text-lg font-bold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li><Link href="#" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors">Terms of Service</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-lg font-bold mb-4">Contact Us</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>Email: support@carestore.com</li>
-              <li>Phone: +1 234 567 8900</li>
-              <li>Address: 123 Care Avenue, NY 10001</li>
-            </ul>
+          
+          <div className="products-grid">
+            {products.map((product) => (
+              <div className="glass-card product-card animate-fade" key={product.ID || product.slug}>
+                <div className="product-img-wrapper">
+                  <img src={product.image_url || '/images/1-1.jpg'} alt={product.post_title} className="product-img" />
+                </div>
+                <span className="product-cat">Equipment</span>
+                <h3 className="product-title">{product.post_title}</h3>
+                <p className="product-desc" dangerouslySetInnerHTML={{ __html: (product.post_content || '').substring(0, 80) + '...' }} />
+                <div className="product-footer">
+                  <Link href={`/product/${product.slug}`} className="product-link">View Details &gt;</Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </footer>
+      </section>
+
+      {/* Global Distribution */}
+      <section className="section-padding">
+        <div className="container" style={{ textAlign: 'center' }}>
+          <span style={{ color: 'var(--primary)', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '0.1em' }}>
+            National Reach
+          </span>
+          <h2 style={{ fontSize: '2.3rem', marginTop: '12px', marginBottom: '20px' }}>
+            Trusted Across the Nation
+          </h2>
+          <p style={{ maxWidth: '600px', margin: '0 auto 60px auto' }}>
+            With years of experience in the domain, we supply high-quality hoist and crane accessories to industries nationwide.
+          </p>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px' }}>
+            <div className="glass-card" style={{ padding: '40px' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '20px' }}>🏭</div>
+              <h3 style={{ marginBottom: '12px' }}>Manufacturing Sector</h3>
+              <p style={{ fontSize: '0.9rem' }}>Supplying robust components for heavy industrial manufacturing.</p>
+            </div>
+            <div className="glass-card" style={{ padding: '40px' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '20px' }}>🏗️</div>
+              <h3 style={{ marginBottom: '12px' }}>Construction</h3>
+              <p style={{ fontSize: '0.9rem' }}>Providing reliable hoisting solutions for major construction projects.</p>
+            </div>
+            <div className="glass-card" style={{ padding: '40px' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '20px' }}>⚙️</div>
+              <h3 style={{ marginBottom: '12px' }}>Material Handling</h3>
+              <p style={{ fontSize: '0.9rem' }}>Complete systems including Busbars, Current Collectors, and Pendants.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bulk Distributions Banner */}
+      <section className="container">
+        <div className="glass-card" style={{ padding: '60px 40px', textAlign: 'center', background: 'linear-gradient(135deg, #f8f9fa 0%, #ffece6 100%)', border: '1px solid rgba(237,9,9,0.2)' }}>
+          <h2 style={{ fontSize: '2.3rem', marginBottom: '20px', color: 'var(--foreground)' }}>
+            Inquire About Bulk Orders
+          </h2>
+          <p style={{ maxWidth: '600px', margin: '0 auto 32px auto', fontSize: '1.05rem' }}>
+            Whether you need customized systems or bulk supplies of our crane accessories, our sales team is ready to assist.
+          </p>
+          <Link href="/" className="contact-btn" style={{ padding: '14px 40px', fontSize: '1.05rem', display: 'inline-block' }}>
+            Request Quotation & Pricing
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
