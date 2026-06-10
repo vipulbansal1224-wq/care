@@ -1,14 +1,11 @@
 import Link from "next/link";
-import products from "../data/products.json";
 
 export default function Home() {
   return (
     <>
       {/* 100vw Full Width Slider */}
       <section className="slider-container">
-        {/* Just mapping the first product image as a static slide for now, mimicking Loadmate's big banner */}
         <div className="slide active">
-          {/* We use an industrial background, or default to black if missing */}
           <div style={{width: '100%', height: '100%', background: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/wp-content/uploads/2023/02/product-jpeg-250x250-1.webp") center/cover no-repeat'}} className="slide-img"></div>
           
           <div className="slide-content container">
@@ -18,7 +15,7 @@ export default function Home() {
               India's leading manufacturer of heavy duty Material Handling Equipments, EOT Crane Spare Parts, DSL Busbar Systems, and Wireless Remote Controls.
             </p>
             <div style={{ display: "flex", gap: "16px" }}>
-              <Link href="#products" className="btn-primary">Our Products</Link>
+              <Link href="/products" className="btn-primary">Our Products</Link>
               <Link href="/contact" className="btn-outline">Contact Us</Link>
             </div>
           </div>
@@ -35,15 +32,14 @@ export default function Home() {
                 <p>Est. 2016 in Ludhiana</p>
               </div>
               <p style={{ fontSize: "1.1rem", marginBottom: "20px", lineHeight: 1.6 }}>
-                <strong>KD Enterprises</strong> stands as a leading Manufacturer of a wide range of Crane Spare Parts & Accessories. Situated in Ludhiana, we have constructed a wide and well functional infrastructural unit.
+                Established as a Sole Proprietorship firm in the year 2016, we <strong>KD Enterprises</strong> are a leading Manufacturer of a wide range of Crane Spare Parts & Accessories. Situated in Ludhiana (Punjab, India), we have constructed a wide and well functional infrastructural unit that plays an important role in the growth of our company.
               </p>
               <p style={{ marginBottom: "30px", lineHeight: 1.6 }}>
-                We offer high-quality products at reasonable rates and deliver these within the promised time-frame. Under the headship of “Mr. Pankesh Thakur”, we have gained a huge clientele across the nation.
+                We offer these products at reasonable rates and deliver these within the promised time-frame. Under the headship of <strong>“Mr. Pankesh Thakur”</strong>, we have gained a huge clientele across the nation.
               </p>
-              <Link href="/" className="btn-primary">Read More</Link>
+              <Link href="/contact" className="btn-primary">Get in Touch</Link>
             </div>
             <div>
-              {/* placeholder image for About Us */}
               <div style={{width: '100%', height: '400px', background: '#e0e0e0', borderRadius: '4px', overflow: 'hidden'}}>
                 <img src="/wp-content/uploads/2023/02/product-jpeg-250x250-2.webp" style={{width: '100%', height: '100%', objectFit: 'cover'}} alt="Factory" />
               </div>
@@ -52,28 +48,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Products Grid */}
-      <section id="products" className="section-padding">
+      {/* Featured Categories (Instead of 24 products) */}
+      <section id="categories" className="section-padding">
         <div className="container">
           <div className="section-title">
-            <h2>Our Products</h2>
-            <p>High quality industrial material handling solutions</p>
+            <h2>Product Categories</h2>
+            <p>Explore our premium range of industrial solutions</p>
           </div>
 
           <div className="products-grid">
-            {products.map((product) => (
-              <div key={product.id} className="product-card">
-                <div className="product-img-wrapper">
-                  <img src={product.image} alt={product.title} className="product-img" />
-                </div>
-                <div className="product-info">
-                  <h3 className="product-title">{product.title}</h3>
-                </div>
-                <Link href={`/product/${product.slug}`} className="product-btn">
-                  Read More
-                </Link>
+            <div className="product-card">
+              <div className="product-img-wrapper">
+                <img src="/wp-content/uploads/2023/02/eot-crane-spares-parts-250x250-1.webp" alt="EOT Crane Spares" className="product-img" />
               </div>
-            ))}
+              <div className="product-info">
+                <h3 className="product-title">EOT Crane Spares</h3>
+              </div>
+              <Link href="/products" className="product-btn">View Category</Link>
+            </div>
+
+            <div className="product-card">
+              <div className="product-img-wrapper">
+                <img src="/wp-content/uploads/2023/02/dsl-busbar-systems-250x250-1.webp" alt="DSL Busbar Systems" className="product-img" />
+              </div>
+              <div className="product-info">
+                <h3 className="product-title">DSL Busbar Systems</h3>
+              </div>
+              <Link href="/products" className="product-btn">View Category</Link>
+            </div>
+
+            <div className="product-card">
+              <div className="product-img-wrapper">
+                <img src="/wp-content/uploads/2023/02/wireless-cable-remote-250x250-1.webp" alt="Wireless Radio Remote" className="product-img" />
+              </div>
+              <div className="product-info">
+                <h3 className="product-title">Wireless Radio Remote</h3>
+              </div>
+              <Link href="/products" className="product-btn">View Category</Link>
+            </div>
+
+            <div className="product-card">
+              <div className="product-img-wrapper">
+                <img src="/wp-content/uploads/2023/02/eot-cranes-current-collector-250x250-1.webp" alt="Current Collectors" className="product-img" />
+              </div>
+              <div className="product-info">
+                <h3 className="product-title">Current Collectors</h3>
+              </div>
+              <Link href="/products" className="product-btn">View Category</Link>
+            </div>
+          </div>
+          
+          <div style={{ textAlign: "center", marginTop: "40px" }}>
+             <Link href="/products" className="btn-primary" style={{ padding: "15px 40px", fontSize: "1.1rem" }}>View All Products</Link>
           </div>
         </div>
       </section>
