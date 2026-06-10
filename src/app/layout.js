@@ -32,16 +32,14 @@ export default function RootLayout({ children }) {
         <header className="header">
           <div className="container header-container">
             <Link href="/" className="logo-link">
-              {/* We don't have a specific logo, so text logo or placeholder */}
-              <h1 style={{color: 'var(--primary)', fontWeight: 900, margin: 0, fontSize: '2rem'}}>KD CRANES</h1>
+              <img src="/images/logo.jpg" alt="KD Cranes Logo" style={{ height: '60px' }} />
             </Link>
             
             <nav className="nav-menu">
               <Link href="/" className="nav-link active">Home</Link>
               <Link href="/products" className="nav-link">Products</Link>
-              <Link href="/products" className="nav-link">Applications</Link>
-              <Link href="/products" className="nav-link">Spares</Link>
-              <Link href="/contact" className="btn-primary">Contact Us</Link>
+              <Link href="/download" className="nav-link">Download</Link>
+              <Link href="/contact" className="btn-primary">Contact</Link>
             </nav>
           </div>
         </header>

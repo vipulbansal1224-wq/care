@@ -1,28 +1,10 @@
 import Link from "next/link";
+import HeroSlider from "../components/HeroSlider";
 
 export default function Home() {
   return (
     <>
-      {/* 100vw Full Width Slider */}
-      <section className="slider-container">
-        <div className="slide active">
-          <div style={{width: '100%', height: '100%', background: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/wp-content/uploads/2023/02/product-jpeg-250x250-1.webp") center/cover no-repeat'}} className="slide-img"></div>
-          
-          <div className="slide-content container">
-            <span className="slide-subtitle">Welcome to KD Cranes</span>
-            <h1 className="slide-title">EOT Crane Manufacturer & Supplier</h1>
-            <p className="slide-desc">
-              India's leading manufacturer of heavy duty Material Handling Equipments, EOT Crane Spare Parts, DSL Busbar Systems, and Wireless Remote Controls.
-            </p>
-            <div style={{ display: "flex", gap: "16px" }}>
-              <Link href="/products" className="btn-primary">Our Products</Link>
-              <Link href="/contact" className="btn-outline">Contact Us</Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Us Split Section */}
+      <HeroSlider />      {/* About Us Split Section */}
       <section className="section-padding" style={{background: '#f9f9f9'}}>
         <div className="container">
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "center" }}>
