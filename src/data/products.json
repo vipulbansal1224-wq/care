@@ -1,65 +1,391 @@
 [
-    {
-        "ID": "1088",
-        "post_title": "Sport Tank Top",
-        "post_content": "\n\nEum culpa assumenda eligendi fugit laborum vitae odit deleniti illo quasi voluptates, ipsa, placeat, quaerat, omnis nisi. Repellendus reprehenderit temporibus optio, unde enim vel dignissimos! Deleniti sed perferendis quod ratione incidunt, quam illo et, nulla delectus. Qui, explicabo eius nisi fugit repudiandae, quos voluptates, beatae ullam consectetur ducimus itaque! Tempore provident eligendi sed ipsum ea. Reiciendis nulla neque sapiente, totam veritatis non? Odio, quaerat.\n\n",
-        "slug": "sport-tank-top",
-        "price": "40",
-        "regular_price": "40",
-        "image_url": "https:\/\/woostify.com\/demos\/free\/fashion1\/wp-content\/uploads\/sites\/2\/2018\/10\/12-3.jpg"
+  {
+    "id": "over-head-cranes-wireless-radio-remote-8d",
+    "slug": "over-head-cranes-wireless-radio-remote-8d",
+    "title": "Over Head Cranes wireless radio remote 8d",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/dsl-busbar-system-125amp-250x250-1.webp",
+    "specs": {
+      "Model Name/Number": "F24E1B",
+      "Remote Type": "Wired Remote Control",
+      "Usage/Application": "Material Handling",
+      "Material": "PVC",
+      "Spare Part": "CRANES SPARE PARTS",
+      "KDCRANES": "1"
     },
-    {
-        "ID": "1089",
-        "post_title": "T-Shirt DAD",
-        "post_content": "\n\nEum culpa assumenda eligendi fugit laborum vitae odit deleniti illo quasi voluptates, ipsa, placeat, quaerat, omnis nisi. Repellendus reprehenderit temporibus optio, unde enim vel dignissimos! Deleniti sed perferendis quod ratione incidunt, quam illo et, nulla delectus. Qui, explicabo eius nisi fugit repudiandae, quos voluptates, beatae ullam consectetur ducimus itaque! Tempore provident eligendi sed ipsum ea. Reiciendis nulla neque sapiente, totam veritatis non? Odio, quaerat.\n\n",
-        "slug": "t-shirt-dad",
-        "price": "42",
-        "regular_price": "45",
-        "image_url": "https:\/\/woostify.com\/demos\/free\/fashion1\/wp-content\/uploads\/sites\/2\/2018\/10\/11-3.jpg"
+    "price": "₹4900"
+  },
+  {
+    "id": "over-head-cranes-wireless-radio-remote-control-systems-6d",
+    "slug": "over-head-cranes-wireless-radio-remote-control-systems-6d",
+    "title": "Over Head Cranes Wireless Radio Remote Control Systems 6d",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/dsl-busbar-system-125amp-250x250-1.webp",
+    "specs": {
+      "Remote Type": "RF Remote Control",
+      "Usage/Application": "Material Handling",
+      "Material": "PVC",
+      "Spare Part": "EOT CRANES SPARE PARTS",
+      "KDCRANES": "1kg"
     },
-    {
-        "ID": "1090",
-        "post_title": "Working Boy T-Shirt",
-        "post_content": "Eum culpa assumenda eligendi fugit laborum vitae odit deleniti illo quasi voluptates, ipsa, placeat, quaerat, omnis nisi. Repellendus reprehenderit temporibus optio, unde enim vel dignissimos! Deleniti sed perferendis quod ratione incidunt, quam illo et, nulla delectus. Qui, explicabo eius nisi fugit repudiandae, quos voluptates, beatae ullam consectetur ducimus itaque! Tempore provident eligendi sed ipsum ea. Reiciendis nulla neque sapiente, totam veritatis non? Odio, quaerat.\r\n\r\nTempore provident eligendi sed ipsum ea. Reiciendis nulla neque sapiente, totam veritatis non? Odio, quaerat.",
-        "slug": "working-boy-t-shirt",
-        "price": "22",
-        "regular_price": null,
-        "image_url": "https:\/\/woostify.com\/demos\/free\/fashion1\/wp-content\/uploads\/sites\/2\/2018\/10\/7-3.jpg"
+    "price": "₹3300"
+  },
+  {
+    "id": "rotary-limit-switch-40amp",
+    "slug": "rotary-limit-switch-40amp",
+    "title": "Rotary Limit Switch 40Amp",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/dsl-busbar-system-125amp-250x250-1.webp",
+    "specs": {
+      "Brand": "KD Crane",
+      "Usage/Application": "EOT Crane",
+      "Switch Type": "Rotary Limit Switch",
+      "Pole Throw": "SPDT",
+      "Switch Configuration": "Both",
+      "Rated Voltage": "440 VAC",
+      "Model Name/Number": "RLS40 FRG50",
+      "Country of Origin": "Made in India"
     },
-    {
-        "ID": "1091",
-        "post_title": "Black Coat",
-        "post_content": "\n\nEum culpa assumenda eligendi fugit laborum vitae odit deleniti illo quasi voluptates, ipsa, placeat, quaerat, omnis nisi. Repellendus reprehenderit temporibus optio, unde enim vel dignissimos! Deleniti sed perferendis quod ratione incidunt, quam illo et, nulla delectus. Qui, explicabo eius nisi fugit repudiandae, quos voluptates, beatae ullam consectetur ducimus itaque! Tempore provident eligendi sed ipsum ea. Reiciendis nulla neque sapiente, totam veritatis non? Odio, quaerat.\n\n",
-        "slug": "black-coat",
-        "price": "11",
-        "regular_price": "11",
-        "image_url": "https:\/\/woostify.com\/demos\/free\/fashion1\/wp-content\/uploads\/sites\/2\/2018\/10\/8-3.jpg"
+    "price": "₹1800"
+  },
+  {
+    "id": "dsl-busbar-system-125amp",
+    "slug": "dsl-busbar-system-125amp",
+    "title": "DSL Busbar System 125amp",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/dsl-busbar-system-125amp-250x250-1.webp",
+    "specs": {
+      "Brand": "KD CRANES",
+      "Usage/Application": "EOT Crane",
+      "Type": "Manual",
+      "Temperature": "-30 to 55 degree celsius",
+      "Frequency": "50 hz",
+      "Length": "4.5 Meter",
+      "Width": "60 mm",
+      "Current Range": "125 Amp"
     },
-    {
-        "ID": "110",
-        "post_title": "Slim Fit Dress Shirts",
-        "post_content": "\n\nEum culpa assumenda eligendi fugit laborum vitae odit deleniti illo quasi voluptates, ipsa, placeat, quaerat, omnis nisi. Repellendus reprehenderit temporibus optio, unde enim vel dignissimos! Deleniti sed perferendis quod ratione incidunt, quam illo et, nulla delectus. Qui, explicabo eius nisi fugit repudiandae, quos voluptates, beatae ullam consectetur ducimus itaque! Tempore provident eligendi sed ipsum ea. Reiciendis nulla neque sapiente, totam veritatis non? Odio, quaerat.\n\n",
-        "slug": "slim-fit-dress-shirts",
-        "price": "50",
-        "regular_price": "52",
-        "image_url": "https:\/\/woostify.com\/demos\/free\/fashion1\/wp-content\/uploads\/sites\/2\/2018\/10\/9-1.jpg"
+    "price": "₹2200"
+  },
+  {
+    "id": "pin-type-dsl-busbar-systems-60amp-100amp-125amp",
+    "slug": "pin-type-dsl-busbar-systems-60amp-100amp-125amp",
+    "title": "Pin Type DSL Busbar Systems 60AMP 100AMP 125AMP",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/bolt-jointed-aluminum-bus-bar-250x250-1.webp",
+    "specs": {
+      "Usage/Application": "dsl bus bar system",
+      "Current": "415v",
+      "No. of Conductors": "40amp 60amp 100amp 125amp",
+      "Material": "Galvanized Iron"
     },
-    {
-        "ID": "112",
-        "post_title": "Front Illustration T-Shirt",
-        "post_content": "\r\n\r\nEum culpa assumenda eligendi fugit laborum vitae odit deleniti illo quasi voluptates, ipsa, placeat, quaerat, omnis nisi. Repellendus reprehenderit temporibus optio, unde enim vel dignissimos! Deleniti sed perferendis quod ratione incidunt, quam illo et, nulla delectus. Qui, explicabo eius nisi fugit repudiandae, quos voluptates, beatae ullam consectetur ducimus itaque! Tempore provident eligendi sed ipsum ea. Reiciendis nulla neque sapiente, totam veritatis non? Odio, quaerat.\r\n\r\n",
-        "slug": "front-illustration-t-shirt",
-        "price": "100",
-        "regular_price": "100",
-        "image_url": "https:\/\/woostify.com\/demos\/free\/fashion1\/wp-content\/uploads\/sites\/2\/2018\/10\/1-3.jpg"
+    "price": "₹5800"
+  },
+  {
+    "id": "dsl-busbar-systems-125-amp-gi-coated",
+    "slug": "dsl-busbar-systems-125-amp-gi-coated",
+    "title": "DSL Busbar Systems 125 AMP GI Coated",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/bolt-jointed-aluminum-bus-bar-250x250-1.webp",
+    "specs": {
+      "Current": "125amp",
+      "Model Name/Number": "KD-DBS-4Line",
+      "Usage/Application": "EOT Crane",
+      "Material": "DSL BUSBAR SYSTEMS",
+      "Brand": "KD CRANE",
+      "KDCRANES": "2.5kg"
     },
-    {
-        "ID": "113",
-        "post_title": "Short Sleeve T-Shirt",
-        "post_content": "\r\n\r\nEum culpa assumenda eligendi fugit laborum vitae odit deleniti illo quasi voluptates, ipsa, placeat, quaerat, omnis nisi. Repellendus reprehenderit temporibus optio, unde enim vel dignissimos! Deleniti sed perferendis quod ratione incidunt, quam illo et, nulla delectus. Qui, explicabo eius nisi fugit repudiandae, quos voluptates, beatae ullam consectetur ducimus itaque! Tempore provident eligendi sed ipsum ea. Reiciendis nulla neque sapiente, totam veritatis non? Odio, quaerat.\r\n\r\n",
-        "slug": "short-sleeve-t-shirt",
-        "price": "30",
-        "regular_price": "32",
-        "image_url": "https:\/\/woostify.com\/demos\/free\/fashion1\/wp-content\/uploads\/sites\/2\/2018\/10\/2-3.jpg"
-    }
+    "price": "₹2800"
+  },
+  {
+    "id": "dsl-busbar-systems",
+    "slug": "dsl-busbar-systems",
+    "title": "DSL Busbar Systems",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/bolt-jointed-aluminum-bus-bar-250x250-1.webp",
+    "specs": {
+      "Power": "60 Amp",
+      "Material": "Aluminium",
+      "Usage/Application": "EOT Crane",
+      "Type": "KD Cranes",
+      "Temperature": "-30 to 55 degree C",
+      "Voltage": "415V"
+    },
+    "price": "₹5200"
+  },
+  {
+    "id": "bolt-jointed-aluminum-busbar-system",
+    "slug": "bolt-jointed-aluminum-busbar-system",
+    "title": "Bolt Jointed Aluminum Busbar System",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/bolt-jointed-aluminum-bus-bar-250x250-1.webp",
+    "specs": {
+      "Material": "Copper",
+      "Usage/Application": "EOT Crane",
+      "Type": "KD Cranes",
+      "Current Range": "125amps",
+      "Temperature Range": "-50 Degree C to +110 Degree C"
+    },
+    "price": "₹3500"
+  },
+  {
+    "id": "dsl-shrouded-busbar",
+    "slug": "dsl-shrouded-busbar",
+    "title": "Dsl Shrouded Busbar",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/product-jpeg-250x250-4.webp",
+    "specs": {
+      "Brand": "eot crane spare parts",
+      "Product Type": "eot crane spare parts",
+      "Material": "iron",
+      "Size/Dimension": "standard",
+      "Max Load Capacity": "standard",
+      "Usage/Application": "Gantry",
+      "Spare Part": "Hoist, Hook Block, Limit Switch, eot crane spare parts",
+      "Model Name/Number": "KDc",
+      "Brand/Make": "KD Cranes"
+    },
+    "price": "₹2200"
+  },
+  {
+    "id": "dsl-busbar-systems-aluminum",
+    "slug": "dsl-busbar-systems-aluminum",
+    "title": "DSL BUSBAR SYSTEMS Aluminum",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/product-jpeg-250x250-4.webp",
+    "specs": {
+      "Material": "Aluminium",
+      "Type": "Fully Automatic",
+      "Voltage": "440 V",
+      "Frequency": "50 Hz",
+      "Length": "4.5m",
+      "Current": "200Amp"
+    },
+    "price": "₹1300"
+  },
+  {
+    "id": "gi-shrouded-dsl-busbar-system-in-india",
+    "slug": "gi-shrouded-dsl-busbar-system-in-india",
+    "title": "Gi Shrouded Dsl Busbar System in INDIA",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/product-jpeg-250x250-4.webp",
+    "specs": {
+      "Brand": "KDCRANES",
+      "Product Type": "Dsl Busbar System",
+      "Material": "GI COTED",
+      "Size/Dimension": "4.5 Mtr Lenth",
+      "Max Load Capacity": "125Amp",
+      "Usage/Application": "Overhead Cranes",
+      "KD Crane": "4.5 Mtr 2Kg"
+    },
+    "price": "₹3800"
+  },
+  {
+    "id": "dsl-busbar-systems-accessories",
+    "slug": "dsl-busbar-systems-accessories",
+    "title": "DSL BUSBAR SYSTEMS  Accessories",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/product-jpeg-250x250-4.webp",
+    "specs": {
+      "Usage/Application": "dsl busbar system",
+      "Current": "125amp",
+      "No. of Conductors": "4",
+      "Material": "Galvanized Iron",
+      "Brand": "KD Crane",
+      "Model Name/Number": "KD-DBS-4Line",
+      "Color": "RYGB",
+      "Temperature": "80",
+      "Country of Origin": "Made in India"
+    },
+    "price": "₹1400"
+  },
+  {
+    "id": "over-head-cranes-wireless-radio-remote-8d",
+    "slug": "over-head-cranes-wireless-radio-remote-8d",
+    "title": "Over Head CRANES Wireless Radio Remote 8D",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/current-collector-250x250-1.webp",
+    "specs": {
+      "Brand": "eot crane spare parts",
+      "Product Type": "eot crane spare parts",
+      "Material": "iron",
+      "Size/Dimension": "standard",
+      "Max Load Capacity": "standard",
+      "Usage/Application": "Gantry",
+      "Spare Part": "Hoist, Hook Block, Limit Switch, eot crane spare parts",
+      "Model Name/Number": "KDc",
+      "Brand/Make": "KD Cranes"
+    },
+    "price": "₹4200"
+  },
+  {
+    "id": "over-head-cranes-wireless-radio-remote-control-systems-6d",
+    "slug": "over-head-cranes-wireless-radio-remote-control-systems-6d",
+    "title": "Over Head Cranes Wireless Radio Remote Control Systems 6d",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/current-collector-250x250-1.webp",
+    "specs": {
+      "Material": "Aluminium",
+      "Type": "Fully Automatic",
+      "Voltage": "440 V",
+      "Frequency": "50 Hz",
+      "Length": "4.5m",
+      "Current": "200Amp"
+    },
+    "price": "₹3500"
+  },
+  {
+    "id": "rotary-limit-switch-40amp",
+    "slug": "rotary-limit-switch-40amp",
+    "title": "Rotary Limit Switch 40Amp",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/current-collector-250x250-1.webp",
+    "specs": {
+      "Brand": "KDCRANES",
+      "Product Type": "Dsl Busbar System",
+      "Material": "GI COTED",
+      "Size/Dimension": "4.5 Mtr Lenth",
+      "Max Load Capacity": "125Amp",
+      "Usage/Application": "Overhead Cranes",
+      "KD Crane": "4.5 Mtr 2Kg"
+    },
+    "price": "₹3300"
+  },
+  {
+    "id": "250-amps-current-collector",
+    "slug": "250-amps-current-collector",
+    "title": "250 Amps Current Collector",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/current-collector-250x250-1.webp",
+    "specs": {
+      "Usage/Application": "dsl busbar system",
+      "Current": "125amp",
+      "No. of Conductors": "4",
+      "Material": "Galvanized Iron",
+      "Brand": "KD Crane",
+      "Model Name/Number": "KD-DBS-4Line",
+      "Color": "RYGB",
+      "Temperature": "80",
+      "Country of Origin": "Made in India"
+    },
+    "price": "₹5900"
+  },
+  {
+    "id": "rotary-limit-switch",
+    "slug": "rotary-limit-switch",
+    "title": "Rotary Limit Switch",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/limit-switch-250x250-1.webp",
+    "specs": {
+      "Material": "Aluminium",
+      "Switch Type": "ROATRY LIMIT SWITCH",
+      "Usage/Application": "EOT CRANE HOIST",
+      "Model Name/Number": "KDM",
+      "Brand/Make": "KD CRANE",
+      "Capacity Amps": "48",
+      "Coating": "P/C",
+      "Country of Origin": "Made in India"
+    },
+    "price": "₹2100"
+  },
+  {
+    "id": "lever-type-limit-switch",
+    "slug": "lever-type-limit-switch",
+    "title": "Lever Type Limit Switch",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/limit-switch-250x250-1.webp",
+    "specs": {
+      "Switch Type": "Lever Limit Switch",
+      "Brand": "KD Cranes",
+      "Usage/Application": "Eot Crane",
+      "Power/Voltage": "440 V",
+      "Frequency": "50 Hz",
+      "IP Rating": "IP55"
+    },
+    "price": "₹1300"
+  },
+  {
+    "id": "giovenzana-rotary-gear-limit-switch",
+    "slug": "giovenzana-rotary-gear-limit-switch",
+    "title": "Giovenzana Rotary Gear Limit Switch",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/limit-switch-250x250-1.webp",
+    "specs": {
+      "Brand": "GIOVENZANA",
+      "Usage/Application": "eot crane",
+      "Switch Type": "Rotary Limit Switch",
+      "Pole Throw": "SPDT",
+      "Switch Configuration": "Both",
+      "Rated Voltage": "440 VAC",
+      "Model Name/Number": "FRG50",
+      "Current Rating": "10AMP",
+      "Country of Origin": "Made in India"
+    },
+    "price": "₹4700"
+  },
+  {
+    "id": "crane-limit-switch",
+    "slug": "crane-limit-switch",
+    "title": "Crane Limit Switch",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/limit-switch-250x250-1.webp",
+    "specs": {
+      "Brand": "GIOVENZANA",
+      "Usage/Application": "eot crane",
+      "Switch Type": "Rotary Limit Switch",
+      "Pole Throw": "SPDT",
+      "Switch Configuration": "Both",
+      "Rated Voltage": "440 VAC",
+      "Model Name/Number": "FRG50",
+      "Current Rating": "10AMP",
+      "Country of Origin": "Made in India"
+    },
+    "price": "₹5000"
+  },
+  {
+    "id": "eot-crane-wireless-cable-remote",
+    "slug": "eot-crane-wireless-cable-remote",
+    "title": "Eot Crane Wireless Cable Remote",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/8-way-eot-crane-wireless-radio-remote-control-8d-250x250-1.webp",
+    "specs": {
+      "Remote Type": "Cable Remote",
+      "Power": "110V",
+      "Packaging Type": "Box",
+      "Brand": "KD Cranes",
+      "Material": "PVC",
+      "12x7x7": "5 to 7kg"
+    },
+    "price": "₹5400"
+  },
+  {
+    "id": "wireless-radio-remote-control-6s-model-no-f21-e1bu",
+    "slug": "wireless-radio-remote-control-6s-model-no-f21-e1bu",
+    "title": "Wireless Radio Remote CONTROL 6S Model No F21 E1BU",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/8-way-eot-crane-wireless-radio-remote-control-8d-250x250-1.webp",
+    "specs": {
+      "Remote Type": "RF Remote Control",
+      "Usage/Application": "Material Handling",
+      "Material": "PVC",
+      "Spare Part": "Over Head Cranes",
+      "KDCRANES": "1kg"
+    },
+    "price": "₹3900"
+  },
+  {
+    "id": "wireless-radio-remote-control-8d",
+    "slug": "wireless-radio-remote-control-8d",
+    "title": "Wireless Radio Remote Control 8D",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/8-way-eot-crane-wireless-radio-remote-control-8d-250x250-1.webp",
+    "specs": {
+      "Remote Type": "Wireless Radio Remote 8D",
+      "Usage/Application": "CRANES CONTROL SYSTEMS",
+      "Power": "Standard",
+      "Packaging Type": "Box",
+      "Brand": "KD CRANES",
+      "Color": "Red",
+      "Distance Range": "100Mtr",
+      "Weight": "1kg",
+      "Battery Life": "2 Cell",
+      "Battery Type": "Cell",
+      "Frequency": "100",
+      "Model Name/Number": "F21 E1B",
+      "Number Of Channels": "8",
+      "KDCRANES": "1kg"
+    },
+    "price": "₹5900"
+  },
+  {
+    "id": "8-way-8d-eot-crane-wireless-radio-remote-control",
+    "slug": "8-way-8d-eot-crane-wireless-radio-remote-control",
+    "title": "8 Way 8D EOT Crane Wireless Radio Remote Control",
+    "image": "https://carecranes.com/wp-content/uploads/2023/02/8-way-eot-crane-wireless-radio-remote-control-8d-250x250-1.webp",
+    "specs": {
+      "Material": "PVC",
+      "Voltage": "65V - 440V",
+      "Distance Range": "0-100 Mtrs",
+      "Remote Type": "IR Remote Control",
+      "Brand": "KD Cranes",
+      "Frequency": "331.165MHz"
+    },
+    "price": "₹5200"
+  }
 ]

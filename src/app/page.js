@@ -113,13 +113,13 @@ export default function Home() {
           
           <div className="products-grid">
             {products.map((product) => (
-              <div className="glass-card product-card animate-fade" key={product.ID || product.slug}>
+              <div className="glass-card product-card animate-fade" key={product.id || product.slug}>
                 <div className="product-img-wrapper">
-                  <img src={product.image_url || '/images/1-1.jpg'} alt={product.post_title} className="product-img" />
+                  <img src={product.image || '/images/1-1.jpg'} alt={product.title} className="product-img" />
                 </div>
                 <span className="product-cat">Equipment</span>
-                <h3 className="product-title">{product.post_title}</h3>
-                <p className="product-desc" dangerouslySetInnerHTML={{ __html: (product.post_content || '').substring(0, 80) + '...' }} />
+                <h3 className="product-title">{product.title}</h3>
+                <p className="product-desc" dangerouslySetInnerHTML={{ __html: Object.entries(product.specs || {}).map(([k,v]) => `<b>${k}:</b> ${v}`).join(', ').substring(0, 80) + '...' }} />
                 <div className="product-footer">
                   <Link href={`/product/${product.slug}`} className="product-link">View Details &gt;</Link>
                 </div>

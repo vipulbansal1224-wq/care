@@ -22,15 +22,15 @@ export default function RootLayout({ children }) {
               <div className="dropdown">
                 <button className="nav-link dropbtn">Products ▼</button>
                 <div className="dropdown-content glass-card">
-                  <Link href="/product/circlip-plier">Pliers</Link>
-                  <Link href="/product/hydraulic-thruster-brake">Hydraulic Brake</Link>
-                  <Link href="/product/dsl-busbar-system">Busbar System</Link>
+                  <Link href="/product/rotary-limit-switch-40amp">Rotary Limit Switch</Link>
+                  <Link href="/product/dsl-busbar-system-125amp">DSL Busbar</Link>
+                  <Link href="/product/over-head-cranes-wireless-radio-remote-8d">Wireless Remote</Link>
                   <Link href="/">All Products</Link>
                 </div>
               </div>
               
-              <Link href="/" className="nav-link">Download</Link>
-              <Link href="/" className="contact-btn">Get In Touch</Link>
+              <Link href="/" className="nav-link">Gallery</Link>
+              <Link href="/" className="contact-btn">Contact</Link>
             </nav>
             
             <button className="mobile-menu-btn" aria-label="Toggle mobile menu">☰</button>

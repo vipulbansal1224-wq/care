@@ -31,8 +31,8 @@ export default function ProductPage({ params }) {
           <div className="glass-card" style={{ padding: '40px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'flex-start' }}>
             <div style={{ background: '#fff', borderRadius: '12px', padding: '20px', border: '1px solid var(--border)' }}>
               <img 
-                src={product.image_url || '/images/1-1.jpg'} 
-                alt={product.post_title} 
+                src={product.image || '/images/1-1.jpg'} 
+                alt={product.title} 
                 style={{ width: '100%', height: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }} 
               />
             </div>
@@ -43,16 +43,21 @@ export default function ProductPage({ params }) {
                 KD Cranes Equipment
               </span>
               <h1 style={{ fontSize: '2.5rem', marginTop: '12px', marginBottom: '24px' }}>
-                {product.post_title}
+                {product.title}
               </h1>
               
               <div style={{ background: 'var(--secondary)', padding: '20px', borderRadius: '8px', marginBottom: '30px', borderLeft: '4px solid var(--primary)' }}>
-                <h4 style={{ marginBottom: '12px', fontSize: '1.1rem' }}>Description</h4>
-                <div 
-                  className="product-desc" 
-                  dangerouslySetInnerHTML={{ __html: product.post_content || '' }} 
-                  style={{ color: 'var(--foreground)' }}
-                />
+                <h4 style={{ marginBottom: '12px', fontSize: '1.1rem' }}>Specifications</h4>
+                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                  <tbody>
+                    {Object.entries(product.specs || {}).map(([key, value]) => (
+                      <tr key={key} style={{ borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
+                        <td style={{ padding: '8px 0', fontWeight: 'bold', width: '40%' }}>{key}</td>
+                        <td style={{ padding: '8px 0', color: 'var(--foreground)' }}>{value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
 
               <div style={{ display: 'flex', gap: '16px', marginTop: '40px' }}>
